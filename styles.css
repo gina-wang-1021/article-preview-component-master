@@ -1,8 +1,182 @@
-* *::before *::after {
+/*
+- Very Dark Grayish Blue: hsl(217, 19%, 35%)
+- Desaturated Dark Blue: hsl(214, 17%, 51%)
+- Grayish Blue: hsl(212, 23%, 69%)
+- Light Grayish Blue: hsl(210, 46%, 95%)
+
+- Font size: 13px
+- Family: [Manrope]
+- Weights: 500, 700
+*/
+
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
-body {
+body, main{
     margin: 0px;
     height: 100vh;
+
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Manrope";
+    font-weight: 500;
+}
+
+.card-flex {
+    width: 90%;
+    margin: 4.625rem auto 0 auto;
+    background-color: #FFF;
+    border-radius: 0.625rem;
+    box-shadow: 2px 5px 10px hsl(212, 23%, 69%);
+}
+
+.left {
+    max-height: 200px;
+    overflow: hidden;
+    border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.right {
+    padding: 5% 10%;
+    position: relative;
+}
+
+.drawer {
+    width: 100%;
+    object-position: center;
+}
+
+.text-main {
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+    letter-spacing: 0.2px;
+    line-height: 1.5rem;
+    margin: 1rem 0;
+}
+
+.text {
+    font-size: 0.8125rem;
+    color: hsl(214, 17%, 51%);
+    letter-spacing: 0.12px;
+    line-height: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info__photo {
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    border-radius: 1000px;
+    margin-right: 1rem;
+}
+
+.text__name {
+    margin: 0;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+
+.text__date {
+    margin: 0;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: hsl(214, 17%, 51%);
+}
+
+.popup__text {
+    text-transform: uppercase;
+    color: hsl(214, 17%, 51%);
+    font-size: 0.8125rem;
+    letter-spacing: 5px;
+    line-height: 1.25rem;
+    margin: 0;
+    margin-right: 0.8rem;
+}
+
+.popup__btn {
+    border: none;
+    background-color: transparent;
+}
+
+.share__btn {
+    border: none;
+    border-radius: 1000px;
+    background-color: hsl(214, 17%, 51%);
+    height: 2rem;
+    width: 2rem;
+    padding: 0;
+    margin: 0;
+
+    position: relative;
+}
+
+.share__popup {
+    background-color: hsl(217, 19%, 35%);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: calc(2.5rem + 10%);
+    border-radius: 0 0 10px 10px;
+
+    position: absolute;
+    padding: 5% 10%;
+    bottom: 0;
+    left: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn__color {
+    background-color: hsl(210, 46%, 95%);
+}
+
+@media (min-width: 780px){
+    .card-flex {
+        display: flex;
+        width: 70%;
+    }
+
+    .left {
+        max-width: 285px;
+        max-height: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .drawer {
+        object-fit: cover;
+        height: 100%;
+        object-position: left;
+    }
+
+    .right {
+        padding: 3% 5%;
+    }
+
+    .share {
+        position: relative;
+    }
+
+    .share__popup {
+        width: auto;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        height: auto;
+        bottom: 42px;
+        left: -103.625px;
+    }
+      
 }
