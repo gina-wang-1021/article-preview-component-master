@@ -16,40 +16,48 @@
 </head>
 <body>
   <main>
-      <div class="flex-card">
-        <img src="./images/drawers.jpg" alt="green drawer and surroundings" class="drawers">
-        <section class="container">
-          <h1 class="main-text">
-            Shift the overall look and feel by adding these wonderful 
-            touches to furniture in your home
-          </h1>
-          <p class="text">
-            Ever been in a room and felt like something was missing? Perhaps 
-            it felt slightly bare and uninviting. I’ve got some simple tips 
-            to help you make any room feel complete.
-          </p>
-        </section>
-        <section class="flex-container color--blue">
-          <section class="info-left visible--hidden">
-            <img src="./images/avatar-michelle.jpg" alt="Michelle's photo" class="head">
-            <div class="info-text">
-              <p class="name">Michelle Appleton</p>
-              <p class="date">28 Jun 2020</p>
-            </div>
-          </section>
-          <section class="sns-container visible--hidden">
-            <p class="share-text">Share</p>
-            <img src="./images/icon-facebook.svg" alt="facebook icon" class="fb">
-            <img src="./images/icon-twitter.svg" alt="twitter icon" class="twitter">
-            <img src="./images/icon-pinterest.svg" alt="pinterest icon" class="pinterest">
-          </section>
-          <div class="share-icon-circle btn-color">
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
-              <path fill="#6E8098" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" class="icn_color"/>
-            </svg>
-          </div>
-        </section>
+    <div class="card-flex">
+      <div class="left">
+        <img src="./images/drawers.jpg" alt="green drawer and its surroundings" class="drawer">
       </div>
+      <div class="right">
+        <h1 class="text-main">
+          Shift the overall look and feel by adding these wonderful 
+          touches to furniture in your home
+        </h1>
+        <p class="text">
+          Ever been in a room and felt like something was missing? Perhaps 
+          it felt slightly bare and uninviting. I’ve got some simple tips 
+          to help you make any room feel complete.
+        </p>
+        <div class="footer">
+          <div class="info">
+            <img src="./images/avatar-michelle.jpg" alt="Michelle's photo" class="info__photo">
+            <div class="info__text">
+              <p class="info__text__name">Michelle Appleton</p>
+              <div class="info__text__date">28 Jun 2020</div>
+            </div>
+          </div>
+          <div class="share">
+            <button class="share__btn">
+              <img src="./images/icon-share.svg" alt="share icon" class="share__btn__icn">
+            </button>
+            <div class="share__popup">
+              <p class="popup__text">Share</p>
+              <button class="popup__fb">
+                <img src="./images/icon-facebook.svg" alt="facebook icon" class="fb__icon">
+              </button>
+              <button class="popup__twt">
+                <img src="./images/icon-twitter.svg" alt="twitter icon" class="twt__icon">
+              </button>
+              <button class="popup__pinterest">
+                <img src="./images/icon-pinterest.svg" alt="pinterest icon" class="pinterest__icon">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 </body>
 </html>
